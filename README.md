@@ -11,6 +11,7 @@ This repository wants to be an agregation of useful information and practical ti
 
   
 * [Other general tools](./General-tools.md) (command line, ...)
+* [Useful links](./useful-links.md)
 
 ## Contributing
 
