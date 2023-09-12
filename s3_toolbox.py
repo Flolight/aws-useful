@@ -1,7 +1,5 @@
 import boto3
-
-def 
-import boto3
+import base64
 
 def generate_s3_presigned_post(bucket_name, file_name):
   """
@@ -40,7 +38,7 @@ def list_s3_files_using_boto3_client(bucket_name):
     for file in files:
         print(f"file_name: {file['Key']}, size: {file['Size']}")
         
-def load_image_from_s3(bucket, photo)
+def load_image_from_s3(bucket, photo):
     """
     Load image from S3 bucket
     """
@@ -50,10 +48,21 @@ def load_image_from_s3(bucket, photo)
     stream = io.BytesIO(s3_response['Body'].read())
     image=Image.open(stream)
     
-def display_image(image_name, bucket_name)
+def display_image_from_s3(image_name, bucket_name):
     """
     Display image from S3 bucket
     """
     display(IImage(url=s3_client.generate_presigned_url('get_object', 
                                                     Params={'Bucket': bucket_name, 
                                                             'Key'   : image_name})))
+
+def show(image):
+  """
+    Display image from base64
+  """
+    i = base64.b64decode(image)
+    i = io.BytesIO(i)
+    i = mpimg.imread(i, format='JPG')
+
+    plt.imshow(i, interpolation='nearest')
+    plt.show()
