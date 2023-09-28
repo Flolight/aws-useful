@@ -8,7 +8,7 @@ This repository wants to be an agregation of useful information and practical ti
 * [AWS Certified Solutions Architect Professional Notes](./AWS-CSA-Pro.md)
 * [S3 Toolbox](./s3_toolbox.py) (Python)
 * [Lambda Layer](./lambda-layer.md)
-* [Bedrock Toolbox](./bedrock_toolbox.py) (Python)
+* [Bedrock](./bedrock)
 * [Amazon Sagemaker Toolbox](./sagemaker_toolbox.py)
   
 * [Other general tools](./General-tools.md) (command line, ...)
