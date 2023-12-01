@@ -1,6 +1,11 @@
 import boto3
 import base64
 
+def write_json_to_s3(bucket_name: str, object_key: str, data):
+    s3 = boto3.client("s3")
+    json_data = json.dumps(data)
+    
+    s3.put_object(Body=json_data, Bucket=bucket_name, Key=object_key)
 def generate_s3_presigned_post(bucket_name, file_name):
   """
   This functions generates a pre-signed curl command to upload a file to S3
