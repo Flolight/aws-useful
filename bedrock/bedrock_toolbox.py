@@ -43,3 +43,22 @@ def decode_and_show(model_response: GenerationResponse) -> None:
     image_data = base64.b64decode(image.encode())
     image = Image.open(io.BytesIO(image_data))
     display(image)
+
+# import boto3
+# import uuid
+def call_agent():
+    # create a boto3 bedrock agent client
+    client = boto3.client("bedrock-agent-runtime")
+
+    # invoke the agent API
+    response = client.invoke_agent(
+        inputText="Hi, my name is Jane Smith and I am looking for shoes",
+        agentId="<AGENT_ID>",
+        agentAliasId="<AGENT_ALIAS>",
+        sessionId=str(uuid.uuid1()), # random identifier,
+        enableTrace=True
+    )
+    
+    return response
+
+
