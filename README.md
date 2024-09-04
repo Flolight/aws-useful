@@ -4,15 +4,21 @@ This repository wants to be an agregation of useful information and practical ti
 
 ## Content
 
+### Technical
+
 * [AWS useful for builders](./AWS-useful.md)
-* [AWS Certified Solutions Architect Professional Notes](./AWS-CSA-Pro.md)
 * [S3 Toolbox](./s3_toolbox.py) (Python)
 * [Lambda Layer](./lambda-layer.md)
-* [Bedrock](./bedrock)
+* [Containers](./containers)
+* [Bedrock and GenAI](./bedrock)
 * [Amazon Sagemaker Toolbox](./sagemaker_toolbox.py)
   
 * [Other general tools](./General-tools.md) (command line, ...)
 * [Useful links](./useful-links.md)
+
+### Certifications
+
+* [AWS Certified Solutions Architect Professional Notes](./AWS-CSA-Pro.md)
 
 ## Contributing
 
