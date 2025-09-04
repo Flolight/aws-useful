@@ -8,7 +8,7 @@ This repository wants to be an agregation of useful information and practical ti
 
 * [AWS useful for builders](./AWS-useful.md)
 * [S3 Toolbox](./s3_toolbox.py) (Python)
-* [Lambda Layer](./lambda-layer.md)
+* [Lambda Layer](./lambda/lambda-layer.md)
 * [Containers](./containers)
 * [Bedrock and GenAI](./bedrock)
 * [Amazon Sagemaker Toolbox](./sagemaker_toolbox.py)
